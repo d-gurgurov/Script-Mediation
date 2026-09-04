@@ -1,17 +1,3 @@
-"""
-generality.py — Test how a steering vector generalizes across many languages.
-
-The vector is built from a chosen set of source languages (e.g. hi+ar) and applied
-to prompts in many other languages. Goal: see whether a "to Latin" or "to native"
-intervention learned on a couple of languages transfers to unseen ones.
-
-Both steering directions (nat2lat, lat2nat) are tested in one invocation and saved
-to separate files. Supports single-layer or all-layers steering.
-
-Prompts are read from data/<lang>.txt — one prompt per line. Romanization helpers
-and non-language files (*_rom.txt, romanization.txt, get.py) are ignored.
-"""
-
 import os
 import json
 import glob
